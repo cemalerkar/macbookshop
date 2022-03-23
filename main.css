@@ -96,7 +96,7 @@ a{
 }
 
 .header-text h1 {
-    font-size: 5rem;
+    font-size: 7.5rem;
     font-weight: 100;
     line-height: 0.6;
     color: #A8DADC;
@@ -171,7 +171,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-around;
-
+    flex-wrap: wrap;
 }
 .about-image{
     width: 40%;
@@ -280,7 +280,6 @@ a{
 
 .footer {
     background-color: #1D3557;
-    
 }
 
 .footer-title h2 {
@@ -336,36 +335,6 @@ a{
     color: #F1FAEE;
     margin-left: 20px;
 }
-
-@media only screen and (max-width: 800px){
-    .header-menu ul{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        position: absolute;
-        top: 100px;
-        left: 0px;
-        background-color: #457B9D;
-        width: 100%;
-        overflow: hidden;
-        transition: max-height .5s;
-    }
-    .header-menu ul li {
-        margin-right: 50px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-    .header-menu a {
-        color: #F1FAEE;
-    }
-
-    .header-menu #menu-icon {
-        display: block;
-        cursor: pointer;
-    }
-}
-
 
 .discover{
     margin-bottom: 150px;
@@ -425,4 +394,91 @@ a{
     text-align: center;
     color: #457B9D;
     font-weight: 400;
+}
+
+@media only screen and (max-width: 800px){
+    .header-menu ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 0px;
+        background-color: #457B9D;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height .5s;
+    }
+    .header-menu ul li {
+        margin-right: 50px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .header-menu a {
+        color: #F1FAEE;
+    }
+
+    .header-menu #menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 1035px){
+    .about-image{
+        width: 100%;
+    }
+    .about-text{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 580px){
+    .contact-item p{
+        font-size: small;
+    }
+    .contact-item i {
+        font-size: medium;
+        margin-bottom: 0;
+    }
+    .header-text h1 {
+        font-size: 6rem;
+    }
+}
+@media only screen and (max-width: 470px){
+    .contact-item p{
+        font-size: x-small;
+    }
+    .header-text h1 {
+        font-size: 5rem;
+    }
+    .footer-social {
+        font-size: 0px;
+    }
+}
+@media only screen and (max-width: 373px){
+    .contact-item p{
+        font-size: xx-small;
+    }
+    .header-text h1 {
+        font-size: 4rem;
+    }
+    .header-text h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 319px) {
+    #logo-name {
+        font-size: 17px;
+    }
+    .contact-item p {
+        font-size: 6px;
+    }
+}
+@media only screen and (max-width: 299px) {
+    .header-text h1{
+        font-size: 3.5rem;
+    }
 }
