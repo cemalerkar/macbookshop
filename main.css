@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+a, 
+a:link,
+a:visited {
+    text-decoration: none;
+    outline: none;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+section,
+span,
+p{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    background-image: url(macbook.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.header-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.header-logo {
+    font-size: 30px;
+    color: #F1FAEE;
+}
+#logo-name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-left: 15px;
+    color: #F1FAEE;
+}
+
+ul{
+    display: flex;
+}
+
+li {
+    margin-left: 27px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    color: #F1FAEE;
+    font-size: 15px;
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header-text h1 {
+    font-size: 5rem;
+    font-weight: 100;
+    line-height: 0.6;
+    color: #A8DADC;
+}
+
+.header-text h2 {
+    font-size: 35px;
+    font-weight: 100;
+    color: #1D3557;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #A8DADC;
+    margin-bottom: 25px;
+}
+
+.btn-getstarted {
+    display: block;
+    background-color: #457B9D;
+    color: #A8DADC;
+    padding: 10px 15px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-getstarted::after {
+    content: "BUY";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1D3557;
+    color: #A8DADC;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+
+.btn-getstarted:hover::after {
+    top: 0;
+}
+
+.about{
+    margin-bottom: 150px;
+}
+
+.about-title {
+    margin: 60px 0;
+}
+.about-title h2 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color:  #1D3557;
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+.about-title h2::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #1D3557;
+    margin: 0 auto;
+    display: block;
+    margin-top: 5px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.about-image{
+    width: 40%;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-text {
+    width: 40%;
+
+}
+.about-text h4 {
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 50px;
+}
+
+#asteriks {
+    color: #1D3557;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: large;
+}
+
+.about-text p {
+    font-size: 20px;
+    text-align: center;
+    color: #457B9D;
+    font-weight: 400;
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    width: 25%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #1D3557;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0.8;
+    color: #A8DADC;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+
+}
+.portfolio-item:hover .overlay{
+    top: 0;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+.contact {
+    padding: 10px 0;
+}
+
+.contact-content {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 33%;
+    margin-bottom: 100px;
+}
+
+.contact-item i {
+    font-size: 25px;
+    margin-bottom: 30px;
+    color:#457B9D;
+}
+
+.contact-item p {
+    font-size: 14px;
+    line-height: 33px;
+}
+
+.footer {
+    background-color: #1D3557;
+    
+}
+
+.footer-title h2 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color:  #A8DADC;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 55px 0;
+}
+
+.footer-title h2::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #A8DADC;
+    margin: 0 auto;
+    display: block;
+    margin-top: 5px;
+}
+
+.footer-copyright {
+    color: #A8DADC;
+    text-align: center;
+    flex-basis: 55%;
+    line-height: 2;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-social i {
+    color: #A8DADC;
+    margin-bottom: 50px;
+    font-size: 25px;
+    padding: 0 45px;
+}
+
+.footer-social:first-child {
+    margin-left: 70px;
+}
+
+#menu-icon {
+    font-size: 25px;
+    display: none;
+    color: #F1FAEE;
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 800px){
+    .header-menu ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 0px;
+        background-color: #457B9D;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height .5s;
+    }
+    .header-menu ul li {
+        margin-right: 50px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .header-menu a {
+        color: #F1FAEE;
+    }
+
+    .header-menu #menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+}
+
