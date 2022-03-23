@@ -33,6 +33,10 @@ p{
     outline: none;
     border: none;
 }
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 .container {
     max-width: 1170px;
